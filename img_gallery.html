@@ -1,31 +1,90 @@
 <html>
     <head>
-        <title>Ploopy</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <title>Teto Society</title>
         <link rel='stylesheet' href="css/main.css">
     </head>
 
     <body>
-        <header><h1>Ploopy Society</h1></header>
+        <header>
+            <img src="images/tetochibiface.png" alt="Teto" id="logo"/>
+            <h1>Teto Society</h1>
+            <fieldset class="login">
+              <label for="name" class="loginText">Username:</label>
+              <input class="loginBoxes" alt="Insert username" type="text" id="name" name="name">
+              <br>
+              <label for="name" class="loginText">Password:</label>
+              <input class="loginBoxes" type="text" id="password" name="password">
+              <br>
+              <button  type="button" onclick="alert('You have been logged in!')" class="loginButton">Login</button>
+          </fieldset>
+          <script>
+            var counter = 2;
+            function login(){
+            if(counter % 2 == 0){
+            alert('You have been logged in!');
+            }
+            else {
+            alert('You have been logged out!');
+            }
+            counter += 1;
+            }
+            </script>
+        </header>
 
         <nav>
             <ul>
-                <li><a href='index.html'>Home!</a></li>
-                <li><a href='img_gallery.html'>Images!</a></li>
-                <li><a href='event_calendar.html'>Members!</a></li>
-                <li><a href='currently_members.html'>Events!</a></li>
-                <li><a href='contact_us.html'>Contact us! (please)</a></li>
+                <li><a class="active" href='index.html'>Home!</a></li>
+                <li><a class="active" href='img_gallery.html'>Images!</a></li>
+                <li><a class="active" href='event_calendar.html'>Events!</a></li>
+                <li><a class="active" href='currently_members.html'>Members!</a></li>
+                <li><a class="active" href='contact_us.html'>Contact us! (please)</a></li>
             </ul>
         </nav>
 
         <main>
-            <div>
-                <img src="images/jeremy.webp" alt="Jeremy"/>
-                <img src="images/jeramy2.webp" alt="Jeremy"/>
+            <div id="img-gallery" class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/new kasane teto.png" class="gallery-img"
+                        onmouseover="this.className='highlight';" 
+                        onmouseout="this.className='gallery-img';"/>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/old kasane teto.png" class="gallery-img"
+                        onmouseover="this.className='highlight';" 
+                        onmouseout="this.className='gallery-img';"/>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/teto drill.png" class="gallery-img"
+                        onmouseover="this.className='highlight';" 
+                        onmouseout="this.className='gallery-img';"/>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/teto fan art.png" class="gallery-img"
+                        onmouseover="this.className='highlight';" 
+                        onmouseout="this.className='gallery-img';"/>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/tetochibiface.png" class="gallery-img"
+                        onmouseover="this.className='highlight';" 
+                        onmouseout="this.className='gallery-img';"/>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/tetoplush.png" class="gallery-img"
+                        onmouseover="this.className='highlight';" 
+                        onmouseout="this.className='gallery-img';"/>
+                    </div>
+                </div>
             </div>
+                
         </main>
 
         <aside> </aside>
 
         <footer> </footer>
+            
     </body>
 </html>
+    
