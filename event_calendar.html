@@ -39,44 +39,76 @@
                 <li><a class="active" href='img_gallery.html'>Images!</a></li>
                 <li><a class="active" href='event_calendar.html'>Events!</a></li>
                 <li><a class="active" href='currently_members.html'>Members!</a></li>
-                <li><a class="active" href='contact_us.html'>Contact us! (please)</a></li>
+                <li><a class="active" href='contact_us.html'>Contact us!</a></li>
             </ul>
         </nav>
 
-<table>
-    <tr>
-        <td></td><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
-    </tr>
-    <tr>
-        <th>W1</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br>
-    </tr>
-    <tr>
-        <th>W2</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br>
-    </tr>
-    <tr>
-        <th>W3</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br>
-    </tr>
-    <tr>
-        <th>W4</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br>
-    </tr>
-    <tr>
-        <th>W5</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br>
-    </tr>
-    <tr>
-        <th>W6</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br>
-    </tr>
-    <tr>
-        <th>W7</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br>
-    </tr>
-    <tr>
-        <th>W8</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br>
-    </tr>
-    <tr>
-        <th>W9</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br>
-    </tr>
-    <tr>
-        <th>W10</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br>
-    </tr>
-</table>
+        <table>
+            <tr>
+                <td></td><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
+            </tr>
+            <tr>
+                <th>W1</th><td></td><td>Teto Event 1</td><td></td><td></td><td></td><td>Weekly Teto </br><td></td>
+            </tr>
+            <tr>
+                <th>W2</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto</br><td></td>
+            </tr>
+            <tr>
+                <th>W3</th><td>Teto Event 2</td><td></td><td></td><td></td><td></td><td>Weekly Teto </br><td></td>
+            </tr>
+            <tr>
+                <th>W4</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br><td></td>
+            </tr>
+            <tr>
+                <th>W5</th><td></td><td></td><td></td><td>Teto Event 3</td><td></td><td>Weekly Teto </br><td></td>
+            </tr>
+            <tr>
+                <th>W6</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br><td></td>
+            </tr>
+            <tr>
+                <th>W7</th><td></td><td></td><td>Teto Event 4</td><td></td><td></td><td>Weekly Teto </br><td></td>
+            </tr>
+            <tr>
+                <th>W8</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br><td></td>
+            </tr>
+            <tr>
+                <th>W9</th><td></td><td>Teto Event 5</td><td></td><td></td><td></td><td>Weekly Teto </br><td></td>
+            </tr>
+            <tr>
+                <th>W10</th><td></td><td></td><td></td><td></td><td></td><td>Weekly Teto </br><td></td>
+            </tr>
+        </table>
+
+        <fieldset class="Event">
+            <label for="name" class="EventText">Title:</label>
+            <input class="EventBoxes" alt="Insert Event Title" type="text" id="name" name="name">
+            <br>
+            <label for="name" class="EventText">Date:</label>
+            <input class="EventBoxes" alt="Insert Event Date" type="text" id="name" name="name">
+            <br>
+            <button  type="button" onclick="alert('You have submited an event!')" class="EventButton">Submit Event</button>
+        </fieldset>
+
+    <script>
+            function submit_event() {
+                var title = document.forms["event"]["event_title"].value;
+                var date = document.forms["event"]["event_date"].value;
+                if (title == "") {
+                    alert("An event must have a title!");
+            }
+            else {
+                if (date.length == 0) {
+                    alert("An event must have a date!");
+                }
+                else {
+                    alert("Event submitted! The society will contact you soon!");
+                }
+            }
+        }
+    </script>
+            
+
+        <footer><p>Copyright Joao Tomas Neto Sampaio/2024</p> </footer>
+    </body>
 
     
