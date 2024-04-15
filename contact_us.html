@@ -51,7 +51,7 @@
                 <legend></legend>
                 <label for="contact"><u><b>Contact us if you have anything to say!</b></u></label><br>
                 <label for="email">Email:</label>
-                <input type="text" id="email" value=""/><br><br>
+                <input type="text" id="email" value=""/>
                 <label for="name">Name:</label>
                 <input type="text" id="name" value=""/>
                 <button onclick="submit_event()">Submit</button>
@@ -62,15 +62,15 @@
             function submit_event() {
                 var email = document.forms["contact"]["email"].value;
                 var name = document.forms["contact"]["name"].value;
-                if (title == "") {
-                    alert("An event must have a title!");
+                if (email == "") {
+                    alert("You must add an email!");
                 }
                 else {
-                    if (name == 0) {
-                        alert("An event must have a date!");
+                    if (name == "") {
+                        alert("You must add a name!");
                     }
                     else {
-                        alert("Event submitted! The society will contact you soon!");
+                        alert("Nice! We'll make sure to contact you soon!");
                     }
                 }
             }
