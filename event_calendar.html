@@ -79,33 +79,36 @@
             </tr>
         </table>
 
-        <fieldset class="Event">
-            <label for="name" class="EventText">Title:</label>
-            <input class="EventBoxes" alt="Insert Event Title" type="text" id="name" name="name">
-            <br>
-            <label for="name" class="EventText">Date:</label>
-            <input class="EventBoxes" alt="Insert Event Date" type="text" id="name" name="name">
-            <br>
-            <button  type="button" onclick="alert('You have submited an event!')" class="EventButton">Submit Event</button>
-        </fieldset>
+        <form class="innerContentText" id="events" name="events">
+            <fieldset>
+                <legend></legend>
+                <label for="events"><u><b>Events</b></u></label><br>
+                <label for="event_title">Event Title:</label>
+                <input type="text" id="event_title" value=""/><br><br>
+                <label for="event_date">Event Date:</label>
+                <input type="date" id="event_date" value=""/>
+                <button onclick="submit_event()">Submit</button>
+            </fieldset>
+        </form>
 
-    <script>
+        <script>
             function submit_event() {
-                var title = document.forms["event"]["event_title"].value;
-                var date = document.forms["event"]["event_date"].value;
+                var title = document.forms["events"]["event_title"].value;
+                var date = document.forms["events"]["event_date"].value;
                 if (title == "") {
                     alert("An event must have a title!");
-            }
-            else {
-                if (date.length == 0) {
-                    alert("An event must have a date!");
                 }
                 else {
-                    alert("Event submitted! The society will contact you soon!");
+                    if (date.length == 0) {
+                        alert("An event must have a date!");
+                    }
+                    else {
+                        alert("Event submitted! The society will contact you soon!");
+                    }
                 }
             }
-        }
-    </script>
+        </script>
+            
             
 
         <footer><p>Copyright Joao Tomas Neto Sampaio/2024</p> </footer>
