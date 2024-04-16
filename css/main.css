@@ -1,7 +1,11 @@
+/*twitter*/
+
 .twitter-timeline{
     margin: auto;
     margin-right: 5px;
 }
+
+/*images and gallery*/
 
 #home-carousel{
     width: 200px;
@@ -30,6 +34,8 @@ a:visited, a:link {
     color: #ff9b8e;
 }
 
+/*header*/
+
 header{
     text-align: left;
     padding: 4px;
@@ -44,6 +50,8 @@ header{
     float: left;
     margin-right: 10px;
 }
+
+/*body*/
 
 body{
     margin: 20px;
@@ -87,6 +95,8 @@ footer{
     border-radius: 10px;
 }
 
+/*navigation bar*/
+
 nav ul{
     margin: 10px;
     padding: 5px;
@@ -115,6 +125,8 @@ nav li:hover{
 .active{
     background-color: #ff4d6d;
 }
+
+/*event table*/
 
 table{
     margin: auto;
@@ -146,14 +158,20 @@ table th{
     margin: 30px
 }
 
+/*fieldset*/
+
 fieldset{
     color: #ffcdb2;
 }
+
+/*aside*/
 
 aside{
     margin: 5px;
     border-radius: 20px
 }
+
+/*Teto Plush*/
 
 #tetoplush{
     margin: 10px;
